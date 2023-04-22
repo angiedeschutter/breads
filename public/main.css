@@ -1,11 +1,25 @@
 body {
-    background-color: floralwhite;
+    background-color:#bbe4e9;
+    color:#5585b5;
+    font-family: fantasy;
   }
   
   img {
-    width: 50%;
+    width: 300px;
     display: block;
-    margin: auto;
+    
+  }
+
+  .button{
+    background-color: #53a8b6;
+    font-family: fantasy;
+    border-radius: 8px;
   }
   
+  .link{
+    color: #79c2d0;
+  }
   
+  a {
+    color: black;
+  }
