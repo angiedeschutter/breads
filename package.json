@@ -9,7 +9,6 @@
   "scripts": {
     "start": "node server.js"
   },
-},
 "keywords": [],
 "author": "",
 "license": "ISC",
@@ -24,4 +23,23 @@
 },
 "nodemonConfig": {
   "ext": "js,html,json,jsx,mjs"
+}
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ]
+}
+}
+
 }
