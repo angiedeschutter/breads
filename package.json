@@ -4,6 +4,21 @@
   "engines": {
     "node": "14.15.4"
   },
+  
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ],
+
+
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -24,22 +39,7 @@
 "nodemonConfig": {
   "ext": "js,html,json,jsx,mjs"
 }
-
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@now/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    }
-  ]
-}
+  
 }
 
-}
+
