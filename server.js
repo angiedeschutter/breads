@@ -43,6 +43,7 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopolo
 
 // LISTEN
 app.listen(PORT, () => {
-  console.log('listening on port', PORT);
+  console.log(`listening on port ${PORT}`);
 })
 
+module.exports = app;
